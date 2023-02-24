@@ -6,7 +6,7 @@ require('dotenv').config();
 const appRoouter = require('./Routes/appRouter')
 
 //establishing database connection
-mongoose.connect(process.env.MONGODB_URL, {
+mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true, 
     useUnifiedTopology: true,
     family: 4,

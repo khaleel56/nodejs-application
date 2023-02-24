@@ -33,7 +33,7 @@ if(isEmpty(sessionId)){
     next();
 }else{
     console.log('Authentication Validation failure')
-    res.status(400).json({message:'LoggedIn User, no need for this'})
+    res.status(400).json({message:'LoggedIn User, cannot  perfrom this task'})
 }
 }
 

@@ -58,7 +58,6 @@ const sendOTPVerificationEmail = async (req, res, emailId) => {
             createdAt: date,
             expiresAt: new Date(date.getTime()+300000)
         })
-        req.session.userId=emailId
         console.log('otp send successfully ')
         res.json({
             status: 'PENDING',

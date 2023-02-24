@@ -86,6 +86,7 @@ const verifyOTP = async (req, res) => {
                     } else {
                         //delete otp once loggedin
                         await UserOtpVerificationModel.deleteMany({ emailId })
+                        req.session.userId=emailId
                         console.log('User email verified successfully')
                         res.json({
                             status: 'VERIFIED',
