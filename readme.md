@@ -5,6 +5,16 @@ user can Post a task & delete,
 user can fetch list of posted tasks,
 user can manage the sequence of tasks that will reflect in  etch list of posted tasks
 
+create a .env file and add values to the variables 
+
+PORT=3000   
+EMAIL=``yout test mailid``
+PSD=``password``
+SESSION_SECRET='nodejssesion'``This can be any random String ``
+MAX_AGE=30000 ``session duraiton``
+MONGODB_URI=`your mongodb url`
+
+
 import below curls and replace the domain of the url (http://localhost:3000/)  with ur hosted app site & hit from postman
 
 1. Register Api
